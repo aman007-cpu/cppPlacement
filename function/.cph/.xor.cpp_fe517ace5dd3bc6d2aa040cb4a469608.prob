@@ -1,0 +1,1 @@
+{"name":"Local: xor","url":"c:\\Users\\sarth\\OneDrive\\Desktop\\c++ Placement\\function\\xor.cpp","tests":[{"id":1654523761038,"input":"1\n2\n4\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sarth\\OneDrive\\Desktop\\c++ Placement\\function\\xor.cpp","group":"local","local":true}
