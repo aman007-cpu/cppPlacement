@@ -1,0 +1,1 @@
+{"name":"Local: kadane","url":"c:\\Users\\sarth\\OneDrive\\Desktop\\c++ Placement\\KadaneAlgo\\kadane.cpp","tests":[{"id":1656434333901,"input":"8\n-5 -1 5 -3 -1 2 3 -6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sarth\\OneDrive\\Desktop\\c++ Placement\\KadaneAlgo\\kadane.cpp","group":"local","local":true}
