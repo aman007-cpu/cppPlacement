@@ -2,6 +2,7 @@
 #include<algorithm>
 using namespace std;
 
+
 int main(){
 
     int n;
@@ -10,7 +11,7 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>ar[i];
     }
-   int maxm = INT_MIN;
+   int maxm = 0;
    for(int i=0;i<n;i++){
        maxm  = max(maxm,ar[i]);
          cout<<maxm<<endl;
