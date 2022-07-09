@@ -23,11 +23,11 @@ string isBalance(string s){
 }
 int main(){
 
-   int i;
+   int t;
    cin>>t;
    while(t--){
     string s;
     cin>>s;
-    cout<<isBalanced(s)<<endl;
+    cout<<isBalance(s)<<endl;
    }
 }
