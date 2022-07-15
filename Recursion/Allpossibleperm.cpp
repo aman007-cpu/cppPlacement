@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 void premutation(string s, string ans){
@@ -15,6 +15,10 @@ void premutation(string s, string ans){
 
 }
 int main(){
-   premutation("ABC","");
+  premutation("ABC","");
+   string str ="ABC";
+    do{
+       cout<<str<<" ";
+    }while(next_permutation(str.begin(),str.end()));
     return 0;
 }
