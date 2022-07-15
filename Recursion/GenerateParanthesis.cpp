@@ -4,6 +4,7 @@ using namespace std;
 vector<string> valid;
 
 void generate(string &s,int open ,int close){
+   
     if(open==0&&close==0){
         valid.push_back(s);
          return;
@@ -23,7 +24,7 @@ void generate(string &s,int open ,int close){
 }
 
 int main(){
- string s="";
+ string s="(())";
  int n;
  cin>>n;
  generate(s,n,n);
