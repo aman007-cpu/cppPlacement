@@ -3,16 +3,16 @@ using namespace std;
 
 const int N = 2e5 +10;
 
-int dp[105][100005]
+long long dp[105][100005]
 int wt[105], val[105];
-int func(int ind, int wt_left){
+long long func(int ind, int wt_left){
     if(wt_left==0){
         return 0;
     }
     if(ind<0) return 0;
     if(dp[ind][wt_left]!=-1) return dp[ind][wt_left];
     //dont choose item at index
-   int ans =  func(ind-1,wt_left);
+   long long ans =  func(ind-1,wt_left);
      //choose item at index'
     if((wt_left-wt[ind])>=0){
     ans = max(ans,func(ind-1,wt_left-wt[ind]) + val[ind]);
@@ -21,7 +21,7 @@ int func(int ind, int wt_left){
 }
 
 int main(){
-    memset(dp,-1,sizeof(dp));
+    memset(dp,-1,sizeof(dp));   
     int n,w;
     cin>>n>>w;
 
