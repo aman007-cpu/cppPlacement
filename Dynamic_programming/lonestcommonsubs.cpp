@@ -5,7 +5,7 @@ const int N = 25e10 +24;
 int dp[N];
 int subseq(int ar[],int n){
     if(dp[i]!=-1) return dp[n];
-     int ans=1;
+     int ans=1; 
      for(int i=0;i<n;i++){
         if(ar[n]>ar[i]){
             ans = max(ans,subseq(ar,i)+1);
