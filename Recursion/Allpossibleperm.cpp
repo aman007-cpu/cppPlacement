@@ -17,8 +17,9 @@ void premutation(string s, string ans){
 int main(){
   premutation("ABC","");
    string str ="ABC";
-    do{
-       cout<<str<<" ";
-    }while(next_permutation(str.begin(),str.end()));
+    // do{
+    //    cout<<str<<" ";
+    // }while(next_permutation(str.begin(),str.end()));
+    
     return 0;
 }
