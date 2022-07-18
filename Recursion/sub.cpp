@@ -8,7 +8,7 @@ void printsub(string s,int ind,string ans){
     }
       //nhi lena
       printsub(s,ind+1,ans);
-      //lena vali cond
+      //lena vali condtion
       ans.push_back(s[ind]);
       printsub(s,ind+1,ans);
 }
