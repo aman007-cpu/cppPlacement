@@ -87,7 +87,49 @@ void inorder(node* root){
     cout<<"Inorder Traversal -> "<<root->data<<" ";
     inorder(root->right);
 }
+node* deletnodebst(node* root,int d){
+    if(root == nullptr){
+        return root;
+    }
+    if(root->data == d){
+        //0 child
+        if(root->left == nullptr && root->right == nullptr){
+            delete root;
+            return nullptr;
+        }
+        //1 child
+             // left child
+              if(root->left!=nullptr && root->right == nullptr){
+                  node* temp = root->left;
+                  delete root;
+                return temp;
+              }
+             // right child
+              if(root->left==nullptr && root->right != nullptr){
+                  node* temp = root->right;
+                  delete root;
+                return temp;
+              }
+        //2 child
+           if(root->left !=nullptr && root->right!==nullptr){
+            int mini = minval(root->right)->data;
+            root->data = mini;
+            root->right = deletnodebst(root->right,mini);
+            return root;
+           }
 
+
+    }
+    else if(root->data > d){
+        root->left =  deletnodebst(root->left,d);
+       return root;
+     } 
+    else{
+        root->right =  deletnodebst(root->right,d);
+        return root;
+    }
+
+}
 
 int main(){
     node* root = nullptr;
