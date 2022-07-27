@@ -34,13 +34,13 @@ void insertNode(node* tail,int element,int val){
 void print(node* tail){
     node* temp = tail;
     do{
-        cout<<tail->data<<" ";
+        cout<<tail->data<<" "; 
         tail = tail->next;
     }while(tail!=temp);
     
 }
 int main(){
  node* tail = nullptr;
- insertNode(tail,0,2);
+ insertNode(tail,0 ,2);
  print(tail);
 }
