@@ -15,6 +15,7 @@ int arr[10];
 cout<<p<<endl;
  p = p+1;
  cout<<p;
+ 
 
 
 }
